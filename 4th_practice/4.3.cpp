@@ -1,5 +1,5 @@
 
-/*4.3 практическая*/
+/*4.3 ГЇГ°Г ГЄГІГЁГ·ГҐГ±ГЄГ Гї*/
 
 #include <iostream>
 using namespace std;
@@ -12,7 +12,7 @@ void krug(double r)
 void pryam()
 {
 	double a, b, s;
-	cout << "введите стороны" << endl;
+	cout << "ГўГўГҐГ¤ГЁГІГҐ Г±ГІГ®Г°Г®Г­Г»" << endl;
 	cin >> a >> b;
 	s = a * b;
 	cout << s << endl;
@@ -20,7 +20,7 @@ void pryam()
 void treug()
 {
 	double a, h, s;
-	cout << "введите стороны" << endl;
+	cout << "ГўГўГҐГ¤ГЁГІГҐ Г±ГІГ®Г°Г®Г­Г»" << endl;
 	cin >> a >> h;
 	s = a * h * 0.5;
 	cout << s << endl;
@@ -29,12 +29,12 @@ int main()
 {
 	setlocale(0, "russian");
 	string a;
-	cout << "площадь чего Вы хотите найти?" << endl;
+	cout << "ГЇГ«Г®Г№Г Г¤Гј Г·ГҐГЈГ® Г‚Г» ГµГ®ГІГЁГІГҐ Г­Г Г©ГІГЁ?" << endl;
 	cin >> a;
 	if (a == "circle")
 	{
 		double r;
-		cout << "введите радиус" << endl;
+		cout << "ГўГўГҐГ¤ГЁГІГҐ Г°Г Г¤ГЁГіГ±" << endl;
 		cin >> r;
 		krug(r);
 	}
