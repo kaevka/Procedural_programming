@@ -4,10 +4,10 @@ using namespace std;
 int main()
 {
 	fstream fs;
-	string f = "C:\\Users\\Åâà\\Desktop\\visual studio\\text.txt";
+	string f = "text.txt";
 	fs.open(f, fstream::in | fstream::out | fstream::app);
 	if (!fs.is_open())
-		cout << "îøèáêà ó òåáÿ!!!" << endl;
+		cout << "error!" << endl;
 	else
 	{
 		char ch;
