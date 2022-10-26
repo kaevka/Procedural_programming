@@ -1,6 +1,3 @@
-
-/*4.3 ïðàêòè÷åñêàÿ*/
-
 #include <iostream>
 using namespace std;
 void krug(double r)
@@ -12,7 +9,7 @@ void krug(double r)
 void pryam()
 {
 	double a, b, s;
-	cout << "ââåäèòå ñòîðîíû" << endl;
+	cout << "введите стороны" << endl;
 	cin >> a >> b;
 	s = a * b;
 	cout << s << endl;
@@ -20,7 +17,7 @@ void pryam()
 void treug()
 {
 	double a, h, s;
-	cout << "ââåäèòå ñòîðîíû" << endl;
+	cout << "введите стороны" << endl;
 	cin >> a >> h;
 	s = a * h * 0.5;
 	cout << s << endl;
@@ -29,12 +26,12 @@ int main()
 {
 	setlocale(0, "russian");
 	string a;
-	cout << "ïëîùàäü ÷åãî Âû õîòèòå íàéòè?" << endl;
+	cout << "площадь какой фигуры?" << endl;
 	cin >> a;
 	if (a == "circle")
 	{
 		double r;
-		cout << "ââåäèòå ðàäèóñ" << endl;
+		cout << "введите радиус" << endl;
 		cin >> r;
 		krug(r);
 	}
