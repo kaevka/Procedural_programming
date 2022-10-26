@@ -13,7 +13,7 @@ int main()
 {
 	int a;
 	setlocale(0, "russian");
-	cout << "ââåäèòå ÷èñëî" << endl;
+	cout << "Ã¢Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã·Ã¨Ã±Ã«Ã®" << endl;
 	cin >> a;
 	znaki(a);
 	system("pause");
