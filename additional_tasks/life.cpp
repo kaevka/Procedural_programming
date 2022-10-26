@@ -8,7 +8,7 @@ using namespace std;
 void zapis(vector <int> mass)
 {
 	fstream f1;
-	string path1 = "C:\\Users\\≈‚‡\\Desktop\\visual studio\\work.out.txt";
+	string path1 = "C:\\Users\\√Ö√¢√†\\Desktop\\visual studio\\work.out.txt";
 	f1.open(path1, fstream::in | fstream::out | fstream::app);
 	int k = 0;
 	while (k < 441)
@@ -31,7 +31,7 @@ int main()
 	vector <string> a;
 	vector <int> mass;
 	string str;
-	string path = "C:\\Users\\≈‚‡\\Desktop\\visual studio\\work.dat.txt";
+	string path = "C:\\Users\\√Ö√¢√†\\Desktop\\visual studio\\work.dat.txt";
 	f.open(path, fstream::in);
 	while (!f.eof())
 	{
@@ -48,7 +48,7 @@ int main()
 	}
 	zapis(mass);
 	int n;
-	cout << "¬‚Â‰ËÚÂ ÍÓÎË˜ÂÒÚ‚Ó ÔÓÍÓÎÂÌËÈ: ";
+	cout << "√Ç√¢√•√§√®√≤√• √™√Æ√´√®√∑√•√±√≤√¢√Æ √Ø√Æ√™√Æ√´√•√≠√®√©: ";
 	cin >> n;
 
 
