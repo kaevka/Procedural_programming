@@ -5,7 +5,7 @@ int main()
 {
 	setlocale(0, "russian");
 	int n;
-	cout << "Ââåäèòå n" << endl;
+	cout << "Введите n" << endl;
 	cin >> n;
 	double sum = 0;
 	double sumsin = 0;
