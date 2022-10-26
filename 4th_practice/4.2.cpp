@@ -13,7 +13,7 @@ int main()
 {
 	int a;
 	setlocale(0, "russian");
-	cout << "ââåäèòå ÷èñëî" << endl;
+	cout << "enter a number" << endl;
 	cin >> a;
 	znaki(a);
 	system("pause");
