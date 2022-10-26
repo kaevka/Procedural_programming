@@ -1,4 +1,4 @@
-/*4.1 практическая*/
+/*4.1 ГЇГ°Г ГЄГІГЁГ·ГҐГ±ГЄГ Гї*/
 
 
 #include <iostream>
@@ -8,16 +8,16 @@ using namespace std;
 int main()
 {
 	setlocale(0, "russian");
-	string path = "C:\\Users\\Ева\\Desktop\\visual studio\\4-1.txt";
+	string path = "C:\\Users\\Г…ГўГ \\Desktop\\visual studio\\4-1.txt";
 	fstream f;
 	f.open(path, fstream::in | fstream::out | fstream::app);
-	for (int i = 0; i < 10; i++)     //начало вписывания
+	for (int i = 0; i < 10; i++)     //Г­Г Г·Г Г«Г® ГўГЇГЁГ±Г»ГўГ Г­ГЁГї
 	{
 		double a;
 		cin >> a;
 		f << a << endl;
 	}
-	f.close();      //конец вписывания
+	f.close();      //ГЄГ®Г­ГҐГ¶ ГўГЇГЁГ±Г»ГўГ Г­ГЁГї
 	double sum = 0.0;
 	double b;
 	f.open(path, fstream::in | fstream::out | fstream::app);
