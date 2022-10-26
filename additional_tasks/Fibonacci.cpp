@@ -10,7 +10,7 @@ int main()
 {
 	setlocale(0, "russian");
 	int n;
-	cout << "Ââåäèòå êàêîå ÷èñëî Ôèáîíà÷÷è Âû áû õîòåëè óâèäåòü" << endl;
+	cout << "Введите какое число Фибоначчи Вы бы хотели увидеть" << endl;
 	cin >> n;
 	cout << F(n) << endl;
 	system("pause");
