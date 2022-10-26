@@ -13,7 +13,7 @@ void proverka1(vector <int> a, int por)
 			{
 				por1 = (l / 4) * 4;
 				if (a[por1] != 1)
-					cout << "Ó÷èòåëü  ìîíàõà ïîä íîìåðîì " << a[por] << " - " << a[por1] << endl;
+					cout << "Учитель  монаха под номером " << a[por] << " - " << a[por1] << endl;
 			}
 		por = por1;
 	}
@@ -44,9 +44,9 @@ bool checker(vector <int> a, int num)
 			k += 1;
 	}
 	if (k >= 1)
-		cout << "Ìîíàõ ïîä íîìåðîì " << num << " ñóùåñòâóåò" << endl;
+		cout << "Монах под номером " << num << " существует" << endl;
 	else
-		cout << "Ìîíàõà ïîä íîìåðîì " << num << " íå ñóùåñòâóåò" << endl;
+		cout << "Mонаха под номером " << num << " не существует" << endl;
 	if (k >= 1)
 		return 1;
 	else
@@ -59,7 +59,7 @@ int main()
 	string str;
 	vector <int> a;
 	int va, n, num, num1, num2, k = 0;
-	string path = "C:\\Users\\Åâà\\Desktop\\visual studio\\txtmonah.txt";
+	string path = "txtmonah.txt";
 	f.open(path, fstream::in);
 	while (!f.eof())
 	{
@@ -68,13 +68,12 @@ int main()
 		a.push_back(va);
 	}
 	f.close();
-	//åñëè ïîðÿäîê êðàòåí 4 èëè ðàâåí íóëþ, òî ÷èñëî ñòîèò ïåðâûì â ñòðîêå = ìîíàõ ÿâëÿåòñÿ ó÷èòåëåì
-	cout << "Ââåäèòå êîëè÷åñòâî ìîíàõîâ, èíôîðìàöèþ î êîòîðûõ Âû õîòèòå óçíàòü" << endl;
+	cout << "Введите количество монахов, информацию о которых Вы хотите узнать" << endl;
 	cin >> n;
 	if (n == 1)
 	{
 		int por;
-		cout << "Ââåäèòå íîìåð ìîíàõà" << endl;
+		cout << "Введите номер монаха" << endl;
 		cin >> num;
 		for (int i = 0; i < 24; i++)
 			if (num == a[i])
@@ -84,14 +83,14 @@ int main()
 				k += 1;
 			}
 		if (k < 1)
-			cout << "Òàêîãî ìîíàõà íå ñóùåñòâóåò" << endl;
+			cout << "Tакого монаха не существует" << endl;
 	}
 	if (n == 2)
 	{
 		vector <int> nu1;
 		vector <int> nu2;
 		int por1, por2;
-		cout << "Ââåäèòå íîìåðà ìîíàõîâ" << endl;
+		cout << "Введите номера монахов" << endl;
 		cin >> num1 >> num2;
 		if (checker(a, num1) == 1 and checker(a, num2) == 1)
 		{
@@ -110,7 +109,7 @@ int main()
 								for (int f = 0; f < nu2.size(); f++)
 									if (nu1[v] == nu2[f])
 									{
-										cout << "Îáùèé ó÷èòåëü - " << nu1[v] << endl;
+										cout << "Общий учитель - " << nu1[v] << endl;
 										system("pause");
 									}
 						}
@@ -119,7 +118,7 @@ int main()
 		}
 	}
 	if ((n != 1) and (n != 2))
-		cout << "Ìîæíî óçíàòü èíôîðìàöèþ òîëüêî îá îäíîì èëè äâóõ ìîíàõàõ" << endl;
+		cout << "Можно узнать информацию только об одном или двух монахах" << endl;
 	system("pause");
 	return 0;
 }
