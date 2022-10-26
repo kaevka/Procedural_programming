@@ -4,7 +4,7 @@ int main()
 {
 	setlocale(0, "russian");
 	int lopast, k4 = 0, k3 = 0;
-	cout << "Ââåäèòå êîëè÷åñòâî èìåþùèõñÿ ëîïàñòåé " << endl;
+	cout << "Введите количество имеющихся лопастей " << endl;
 	cin >> lopast;
 	if ((lopast % 4) < 3 and lopast >= 3)
 	{
@@ -24,8 +24,8 @@ int main()
 			k4 = lopast / 4;
 			k3 = lopast % 4;
 		}
-	cout << "Êîëè÷åñòâî ñïèííåðîâ ñ 4 ëîïàñòÿìè = " << k4 << endl;
-	cout << "Êîëè÷åñòâî ñïèííåðîâ ñ 3 ëîïàñòÿìè = " << k3 << endl;
+	cout << "Количество спиннеров с 4 лопастями = " << k4 << endl;
+	cout << "Количество спиннеров с 3 лопастями = " << k3 << endl;
 	system("pause");
 	return 0;
 }
