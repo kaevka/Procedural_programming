@@ -1,9 +1,3 @@
-//4.9
-
-/*Ïðîãðàììà äîëæíà ñ÷èòûâàòü ñ êëàâèàòóðû ÷èñëî, çàïèñàííîå â îäíîé ñèñòåìå
-ñ÷èñëåíèÿ, è âûâîäèòü íà ýêðàí ýòî ÷èñëî â çàïèñè ïî äðóãîìó îñíîâàíèþ, íàïðèìåð: èñõîäíîå ÷èñëî – 112D, ñòàðîå
-îñíîâàíèå – 16, íîâîå îñíîâàíèå – 8, ðåçóëüòàò – 10455.*/
-
 #include <iostream>
 #include <vector>
 #include <numeric>
@@ -36,37 +30,29 @@ vector <int> chislo(vector <int>& a, string s)
 		if (s[i] == 'A')
 		{
 			a.push_back(10);
-			/*a.push_back(0);*/
 		}
 		if (s[i] == 'B')
 		{
 			a.push_back(11);
-			/*a.push_back(1);*/
 		}
 		if (s[i] == 'C')
 		{
 			a.push_back(12);
-			/*a.push_back(2);*/
 		}
 		if (s[i] == 'D')
 		{
 			a.push_back(13);
-			/*a.push_back(3);*/
 		}
 		if (s[i] == 'E')
 		{
 			a.push_back(14);
-			/*a.push_back(4);*/
 		}
 		if (s[i] == 'F')
 		{
 			a.push_back(15);
-			/*a.push_back(5);*/
 		}
 		if (s[i] == '0')
 			a.push_back(0);
-		//cout << "peredelka v massiv" << endl;
-		//cout << a[i] << endl; //plus this
 	}
 	return a;
 }
@@ -75,17 +61,11 @@ void resultat(int chis, int n2)
 {
 	vector <char> ost;
 	int k, por = 0;
-	//cout << "âûâîä ÷èñëà (ïîñëå òåëà)" << endl;
-	//cout << chis << endl;    //plus this
 	while (chis >= n2)
 	{
 		k = chis % n2;
 		ost.push_back(k);
-		//cout << "âûâîä îñòàòêîâ â ïåðåâîäå" << endl;
-		//cout << k << endl;  //plus this
 		chis = chis / n2;
-		//cout << "âûâîä öåëîãî â ïåðåâîäå" << endl;
-		//cout << chis << endl;   //plus this
 		por++;
 	}
 	ost.push_back(chis);
@@ -125,7 +105,7 @@ void resultat(int chis, int n2)
 		if (ost[i] == 15)
 			ost[i] = 'F';
 	}
-	cout << "Âàø ðåçóëüòàò: " << endl;
+	cout << "Ваш результат: " << endl;
 	for (int i = 0; i <= por; i++)
 		cout << ost[i];
 	cout << endl;
@@ -142,18 +122,15 @@ int main()
 	setlocale(0, "russian");
 	string s;
 	int n1, n2;
-	cout << "Ââåäèòå èñõîäíîå ÷èñëî" << endl;
+	cout << "Введите исходное число" << endl;
 	cin >> s;
-	cout << "Ââåäèòå èñõîäíóþ ñèñòåìó ñ÷èñëåíèÿ" << endl;
+	cout << "Введите исходную систему счисления" << endl;
 	cin >> n1;
-	cout << "Ââåäèòå æåëàåìóþ ñèñòåìó ñ÷èñëåíèÿ" << endl;
+	cout << "Введите желаемую систему счисления" << endl;
 	cin >> n2;
 	vector <int> a;
 	chislo(a, s);
-	//cout << a[0] << a[1] << endl; //plus this
 	int c, res = 0;
-
-	//ïåðåâîä â 10ññ
 	if (n1 != 10)
 	{
 		for (int i = 0; i < a.size(); i++)
@@ -163,13 +140,10 @@ int main()
 		}
 		resultat(res, n2);
 	}
-
-	//èç 10ññ
 	else
 	{
 		int n, chis = 0;
 		n = a.size();
-		/*	chis = accumulate(a.begin(), a.end(), chis, f);*/
 		for (int i = 0; i < a.size(); i++)
 		{
 			chis += a[i] * pow(10, a.size() - 1 - i);
