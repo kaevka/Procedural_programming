@@ -19,11 +19,11 @@ int main()
 	setlocale(0, "russian");
 	int a, b, c;
 	c = 0;
-	cout << "Ââåäèòå ÷èñëî 1" << endl;
+	cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã·Ã¨Ã±Ã«Ã® 1" << endl;
 	cin >> a;
-	cout << "Ââåäèòå ÷èñëî 2" << endl;
+	cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã·Ã¨Ã±Ã«Ã® 2" << endl;
 	cin >> b;
-	cout << "ÍÎÄ äåëåíèåì = " << NOD_d(a, b, c) << endl;
+	cout << "ÃÃÃ„ Ã¤Ã¥Ã«Ã¥Ã­Ã¨Ã¥Ã¬ = " << NOD_d(a, b, c) << endl;
 	while (a != b)
 	{
 		if (a > b)
@@ -31,7 +31,7 @@ int main()
 		else
 			b = b - a;
 	}
-	cout << "ÍÎÄ âû÷åòàíèåì = " << a << endl;
+	cout << "ÃÃÃ„ Ã¢Ã»Ã·Ã¥Ã²Ã Ã­Ã¨Ã¥Ã¬ = " << a << endl;
 	system("pause");
 	return 0;
 }
