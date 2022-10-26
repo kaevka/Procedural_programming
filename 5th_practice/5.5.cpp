@@ -1,5 +1,3 @@
-//5.5
-
 #include <fstream>
 #include <iostream> 
 #include <clocale> 
@@ -10,7 +8,7 @@ using namespace std;
 int main()
 {
 	setlocale(0, "russian");
-	string path = "C:\\Users\\Åâà\\Desktop\\visual studio\\txt5.5.txt";
+	string path = "txt5.5.txt";
 	fstream f;
 	string str, igrushka1, igrushka2, igrushka3, igrushka4, igrushka5, igrushka6;
 	int cena1, cena2, cena3, cena4, cena5, cena6;
@@ -58,10 +56,7 @@ int main()
 	cena6 = stoi(a[i + 1]);
 	ot6 = stoi(a[i + 2]);
 	do6 = stoi(a[i + 3]);
-
-	//à) íàçâàíèÿ èãðóøåê, öåíà êîòîðûõ íå ïðåâûøàåò 400 ð., è êîòîðûå ïîäõîäÿò äåòÿì 8 ëåò;
-	//ïóíêò À
-	cout << "íàçâàíèÿ èãðóøåê, öåíà êîòîðûõ íå ïðåâûøàåò 400 ð., è êîòîðûå ïîäõîäÿò äåòÿì 8 ëåò" << endl;
+	cout << "названия игрушек, цена которых не превышает 400 р., и которые подходят детям 8 лет" << endl;
 	if (cena1 <= 400 and do1 >= 8)
 		cout << igrushka1 << endl;
 	if (cena2 <= 400 and do2 >= 8)
@@ -75,10 +70,8 @@ int main()
 	if (cena6 <= 400 and do6 >= 8)
 		cout << igrushka6 << endl;
 
-	//á) öåíó ñàìîé äîðîãîé èãðóøêè(èãðóøåê);
-	//ïóíêò Á
 	cout << endl;
-	cout << "öåía ñàìîé äîðîãîé èãðóøêè" << endl;
+	cout << "ценa самой дорогой игрушки" << endl;
 	int max = 0;
 	if (cena1 > max)
 		max = cena1;
@@ -94,10 +87,8 @@ int main()
 		max = cena6;
 	cout << max << endl;
 
-	//â) íàçâàíèÿ è öåíó èãðóøåê, êîòîðûå ïîäõîäÿò îäíîâðåìåííî äåòÿì 4 - õ è 10 - è ëåò
-	//ïóíêò 
 	cout << endl;
-	cout << "íàçâàíèÿ è öåíû èãðóøåê, êîòîðûå ïîäõîäÿò îäíîâðåìåííî äåòÿì 4 - õ è 10 - è ëåò" << endl;
+	cout << "названия и цены игрушек, которые подходят одновременно детям 4 - х и 10 - и лет" << endl;
 	if (ot1 <= 4 and do1 >= 10)
 		cout << igrushka1 << " " << cena1 << endl;
 	if (ot2 <= 4 and do2 >= 10)
