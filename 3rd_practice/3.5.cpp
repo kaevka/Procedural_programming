@@ -6,7 +6,7 @@ using namespace std;
 int main()
 {
 	setlocale(0, "");
-	string fs = "C:\\Users\\≈‚‡\\Desktop\\visual studio\\text2.txt";
+	string fs = "C:\\Users\\√Ö√¢√†\\Desktop\\visual studio\\text2.txt";
 	fstream f;
 	string s;
 	f.open(fs, fstream::in | fstream::out | fstream::app);
